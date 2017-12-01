@@ -1,0 +1,17 @@
+.parana-foto {
+    background-image: url(img/parana%20living.jpg);
+}
+
+.orinoco-foto {
+    background-image: url(img/Orinoco%20Living.jpg);
+}
+
+.header-photo {
+    height: 60vh;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+    text-align: center;
+}
+
+.header-photo > h1 {
+}
