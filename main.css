@@ -1,17 +1,44 @@
 .parana-foto {
-    background-image: url(img/parana%20living.jpg);
+    background-image: url(img/parana_living.jpg);
 }
 
 .orinoco-foto {
-    background-image: url(img/Orinoco%20Living.jpg);
+    background-image: url(img/Orinoco_Living.jpg);
 }
 
 .header-photo {
     height: 60vh;
-  	background-repeat: no-repeat;
+    background-repeat: no-repeat;
   	background-size: cover;
     text-align: center;
 }
 
 .header-photo > h1 {
+    font: "Montserrat";
+    font-weight: 700;
+    position: absolute;
+    left: 36%;
+    top: 45%;
+    color: #ffffff;
+    text-shadow: 3px 3px #000000;
 }
+
+.copyright {
+    color:#959595;
+}
+
+/*.collapse-navbar-collapse {
+    text-align: center;
+    font: "Montserrat";
+    margin: 10px;
+    background-color: #ffffff;
+    
+}*/
+
+/*.navbar-nav {
+    text-align: center;
+    font: "Montserrat";
+    margin: 10px;
+    background-color: #ffffff;
+    
+}*/
