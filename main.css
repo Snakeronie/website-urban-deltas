@@ -1,11 +1,3 @@
-.parana-foto {
-    background-image: url(img/parana_living.jpg);
-}
-
-.orinoco-foto {
-    background-image: url(img/Orinoco_Living.jpg);
-}
-
 .header-photo {
     height: 60vh;
     background-repeat: no-repeat;
@@ -13,32 +5,93 @@
     text-align: center;
 }
 
-.header-photo > h1 {
+.header-photo :hover {
+   color: white;
+}
+
+.header-photo h1 {
     font: "Montserrat";
     font-weight: 700;
     position: absolute;
     left: 36%;
     top: 45%;
-    color: #ffffff;
+    color: #eaeaea;
     text-shadow: 3px 3px #000000;
 }
+
+#parana-foto {
+    background-image: url(img/parana_living.jpg);
+    cursor:pointer;
+}
+
+#orinoco-foto {
+    background-image: url(img/Orinoco_Living.jpg);
+    cursor:pointer;
+}
+
+#map-icon-icon {
+    background-image: url(img/Map%20Icon.png);
+    cursor:pointer;
+    height: 48px;
+    width: 48px;
+}
+    
 
 .copyright {
     color:#959595;
 }
+.left-field {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin: 0px;
+  background-color: #465B29;
+  clear: both;
+}
 
-/*.collapse-navbar-collapse {
-    text-align: center;
-    font: "Montserrat";
-    margin: 10px;
-    background-color: #ffffff;
-    
-}*/
+.right-field {
+  float: right;
+  width: 200px;
+  height: 100%;
+  margin: 0px;
+  background-color: #465B29;
+  /*clear: both;*/
+}
 
-/*.navbar-nav {
-    text-align: center;
+.title-top {
+    color: #ffffff;
     font: "Montserrat";
-    margin: 10px;
-    background-color: #ffffff;
-    
-}*/
+    font-weight: 640;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.field-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.center-field {
+    height: 100%;
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left-field-text {
+    font: "Montserrat";
+    color: #ffffff;
+    font-size: 12px;
+    margin: 15px
+}
+
+.mapicon {
+    padding-left: 57px;
+    padding-top: 20px;
+}
