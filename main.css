@@ -20,41 +20,139 @@
 }
 
 #parana-foto {
-    background-image: url(img/parana_living.jpg);
+    background-image: url(img/Parana_Delta_GIF.gif);
     cursor:pointer;
 }
 
 #orinoco-foto {
-    background-image: url(img/Orinoco_Living.jpg);
+    background-image: url(img/Orinoco_Delta_GIF.gif);
     cursor:pointer;
 }
 
-#map-icon-icon {
+#rightsideicons {
     background-image: url(img/Map%20Icon.png);
     cursor:pointer;
-    height: 48px;
-    width: 48px;
+    height: 55px;
+    width: 55px;
+    margin-bottom: 40px;
 }
     
+.top-text {
+    text-align: center;
+    height: 90px;
+    background-color: #10502c;
+    color: #ffffff;
+    font: "Montserrat";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 .copyright {
     color:#959595;
 }
-.left-field {
+
+.left-field-main {
   float: left;
   width: 30%;
   height: 100%;
   margin: 0px;
-  background-color: #465B29;
+  background-color: #38a1d6;
   clear: both;
 }
 
-.right-field {
+.center-field-main {
+    height: 100%;
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0 auto;
+    background-color: #80cbf2;
+}
+
+.right-field-main {
   float: right;
   width: 200px;
   height: 100%;
   margin: 0px;
-  background-color: #465B29;
+  background-color: #38a1d6;
+  /*clear: both;*/
+}
+
+.left-field-soil {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin: 0px;
+  background-color: #10502c;
+  clear: both;
+}
+
+.center-field-soil {
+    height: 100%;
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0 auto;
+    background-color: #526d5e;
+}
+
+.right-field-soil {
+  float: right;
+  width: 200px;
+  height: 100%;
+  margin: 0px;
+  background-color: #10502c;
+  /*clear: both;*/
+}
+
+.left-field-infra {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin: 0px;
+  background-color: #db3426;
+  clear: both;
+}
+
+.center-field-infra {
+    height: 100%;
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0 auto;
+    background-color: #dd7b73;
+}
+
+.right-field-infra {
+  float: right;
+  width: 200px;
+  height: 100%;
+  margin: 0px;
+  background-color: #db3426;
+  /*clear: both;*/
+}
+
+.left-field-map {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin: 0px;
+  background-color: #7fc241;
+  clear: both;
+}
+
+.center-field-map {
+    height: 100%;
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0 auto;
+    background-color: #c6eda3;
+}
+
+.right-field-map {
+  float: right;
+  width: 200px;
+  height: 100%;
+  margin: 0px;
+  background-color: #7fc241;
   /*clear: both;*/
 }
 
@@ -82,6 +180,7 @@
     /*display: inline-block;*/
     width: 100%;
     margin: 0 auto;
+    background-color: #80cbf2;
 }
 
 .left-field-text {
@@ -94,4 +193,17 @@
 .mapicon {
     padding-left: 57px;
     padding-top: 20px;
+}
+
+#map1 { 
+  height: 100%; 
+  width:100%;
+}
+
+#carouselExampleIndicators{
+    height: 100%;
+}
+
+#shadow-black {
+    color: black;
 }

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required Meta Tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+<!-- Bootstrap css -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<title>Urban Delta Project</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+<link rel="stylesheet" href="main.css">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="The Urban Delta project is een bedrijf dat zich
+    bezig houdt met het urbaniseren van delta gebieden. De Orinoco Delta is een locatie vol ongetapte potentie. De rijke ecologie en grondstoffen kunnen het omtoveren in een paradijs. Door rekening te houden met de bodemvorming, inheemse bevolking en de verschillende factoren die de Parana delta maakt tot wat het is kan de Orinoco delta een succes worden.">
+        <meta name="keywords" content="urban delta, the urban delta project, Orinoco Delta, Parnana Delta, Warao, bodemvorming, ecologie">
+        <meta name="robots" content="all">
+        <meta http-equiv="language" content="NL">
+        <meta name="web_author" content="Ryan Geuzinge">
+    
+</head>
+<body>
+    
+<div class="field-container">
+    <div class="left-field-map"> 
+        
+        <h1 class="title-top">MAPS OF ORINOCO AND PARANA</h1> 
+            <p class="left-field-text">Check out this cool map
+            </p>
+    </div>  
+     
+    <div class="center-field-map">
+        <div id="map1"></div>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+      <script>
+  //initialize the map         
+  var map = L.map('map1').setView([-16.583823, -56.992354], 3);
+  var orinoco = L.marker([9.0372464078, -61.386246669]).addTo(map);
+  var parana = L.marker([-33.978909338, -58.790562366]).addTo(map);
+          
+  //Pop ups
+  var popup = "Orinoco Delta"; orinoco.bindPopup(popup); 
+  var popup = "Parana Delta"; parana.bindPopup(popup);   
+          
+  //Create baselayer - tiles         
+  var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
+    attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    maxZoom: 19
+    }
+  );
+  
+  backgroundMap.addTo(map);
+</script>
+    </div>   
+        
+    <div class="right-field-map">   
+        <div class= "container-fluid mapicon">
+            <div class="row">
+                <div id="rightsideicons" onclick="window.location='Leafletmap.html';"> 
+                    <img class="d-block w-100" src="img/MapIcon.png">
+                </div> 
+                <div id="rightsideicons" onclick="window.location='orinocosoil.html';"> 
+                    <img class="d-block w-100" src="img/SoilIcon.png">
+                </div>
+                <div id="rightsideicons" onclick="window.location='orinocoinfrastructure.html';"> 
+                    <img class="d-block w-100" src="img/infrastructureicon.png">
+                </div>
+            </div>
+        </div>  
+    </div>         
+</div>
+</body>
+</html> 
